@@ -11,7 +11,8 @@
 	2) selet VPC ->click Attch button -> DNSHostames -> set no
 	3)  selet VPC ->click Attch button ->DNSresolution->set yes
 
-.)Create a s3 endpoint and attach it to private subnet"s routing table of this vpc(as emr needs an s3 endoint )
+.)Create a s3 endpoint and attach it to private subnet's routing table of this vpc(as emr needs a s3 endoint )
+
 .)Create a nat instance in public subnet and attach it to private subnet's routing table.Also verify you have internet gateway attached to main routing table or public subnet routing table.
 
 
@@ -30,8 +31,8 @@ In zone files entery ALL ip's of private subnet to be mentioned ....as shown.
 .)After this run $ systemctl restart named.service
 
 
-""""IF THIS GIVES NO ERROR YOU R  DONE WIH SETTING UP CUSTOM DNS SERVER FOR EMR IN PRIAVTE SUBNET """
-LAUNCH EMR IN THIS PRIVATE SUBNET WITH LESS THAN 11 NODES AND YOUR EMR WILL HAVE IP LIKE IP-XX-XX-XX-XX.xman.local
+""""IF THIS GIVES NO ERROR YOU ARE  DONE WIH SETTING UP CUSTOM DNS SERVER FOR EMR WHICH IS IN PRIAVTE SUBNET """
+LAUNCH EMR IN THIS PRIVATE SUBNET WITH LESS THAN 11 NODES AS CIDR IS /28  AND YOUR EMR WILL HAVE IP LIKE IP-XX-XX-XX-XX.xman.local
 
 
 
