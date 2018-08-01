@@ -1,0 +1,31 @@
+; file: /var/named/reverse_xman.zone
+$TTL 5M
+@   IN SOA  ns.xman.local.    root.xman.local. (
+                    0   ; serial
+                    1D  ; refresh
+                    1H  ; retry
+                    1W  ; expire
+                    3H )    ; minimum
+    IN  NS  ns.xman.local.
+;ptr records
+145.0   IN	PTR    ip-10-0-0-145.xman.local.	; 10.0.0.145
+0.1   IN	PTR    ip-10-0-1-0.xman.local.        ; 10.0.1.0
+1.1     IN	PTR    ip-10-0-1-1.xman.local.        ; 10.0.1.1
+2.1     IN	PTR    ip-10-0-1-2.xman.local.        ; 10.0.1.2
+3.1     IN	PTR    ip-10-0-1-3.xman.local.        ; 10.0.1.3
+4.1     IN	PTR    ip-10-0-1-4.xman.local.        ; 10.0.1.4
+5.1     IN	PTR    ip-10-0-1-5.xman.local.        ; 10.0.1.5
+6.1     IN	PTR    ip-10-0-1-6.xman.local.        ; 10.0.1.6
+7.1     IN	PTR    ip-10-0-1-7.xman.local.        ; 10.0.1.7
+8.1     IN	PTR    ip-10-0-1-8.xman.local.        ; 10.0.1.8
+9.1     IN	PTR    ip-10-0-1-9.xman.local.        ; 10.0.1.9
+10.1    IN	PTR    ip-10-0-1-10.xman.local.        ; 10.0.1.10
+11.1    IN	PTR    ip-10-0-1-11.xman.local.        ; 10.0.1.11
+12.1    IN	PTR    ip-10-0-1-12.xman.local.        ; 10.0.1.12
+13.1    IN	PTR    ip-10-0-1-13.xman.local.        ; 10.0.1.13
+14.1    IN	PTR    ip-10-0-1-14.xman.local.        ; 10.0.1.14
+15.1    IN	PTR    ip-10-0-1-15.xman.local.        ; 10.0.1.15
+......
+......
+......
+		
